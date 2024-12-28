@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d32f2f; /* red background */
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px; /* adjust height of logo as needed */
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black; /* text color */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline; /* adds hover effect */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.btn-outline-success {
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: gray; /* A slightly lighter black for hover effect */
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.promo-text {
+    flex: 1;
+    text-align: center;
+}
+
+.promo-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.carousel-item {
+    position: relative;
+    height: 500px; /* Adjust to match the max-height of images, or use vh for full viewport height */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* or whatever width you prefer */
+    max-width: 600px; /* Limit how wide the caption can get */
+    text-align: center; /* Center text within the caption */
+}
+
+.carousel-caption h2 {
+    margin-bottom: 1rem;
+}
+
+.
+/* Adjust font sizes for better readability across devices */
+.carousel-caption h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption .cta-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-image img {
+    max-width: 80%;
+    border: 20px solid #d32f2f; /* red border around image */
+    height: auto;
+}
+.sale-section {
+    background-image: url('comic2.jpg'); /* Replace with the path to your PNG image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sale-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background to make text stand out */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.sale-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+    color: white;
+}
+.comic-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Category Section */
+.category-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.category-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-item {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.category-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: gray;
+}
+
+.comic-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .comic-card {
+            display: flex;
+            background: #202020;
+            color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative; /* Needed for the shadow effect */
+        }
+
+        .comic-card img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-right: 4px solid #d32f2f; /* Red border */
+        }
+
+        .comic-image {
+            position: relative;
+        }
+
+        .comic-image img {
+            border: 12px solid red;
+        }
+
+        .comic-card .comic-image::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: calc(100% - 20px); /* Adjust for shadow */
+            height: calc(100% - 20px); /* Adjust for shadow */
+            background-color: black;
+            z-index: -1; /* Push shadow behind the image */
+        }
+
+        .comic-details {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .comic-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #d32f2f;
+        }
+
+        .comic-details p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .comic-details p span {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        }
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+}
+/* Product Details */
+.product-details img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 335px;
+    max-height: 573px;
+    margin: auto;
+}
+
+.product-details h2 {
+    color: #d32f2f;
+}
+
+.product-details .lead {
+    font-weight: bold;
+}
+
+/* Ensure spacing between image and text */
+@media (min-width: 768px) {
+    .product-details .col-md-6:first-child {
+        padding-right: 50px;
+    }
+    .product-details .col-md-6:last-child {
+        padding-left: 50px;
+    }
+}
+
+
+/* Signup Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+}
+.signup-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin-bottom: 10px;
+}
+
+.signup-container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.signup-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-btn:hover {
+    background-color: gray;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel Styling */
+#comicCarousel {
+    margin-top: 20px; /* Space from the header */
+}
+
+.carousel-item img {
+    max-height: 400px; /* Adjust according to your design preference */
+    object-fit: cover; /* Ensures the image covers the entire slide without distortion */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #d32f2f; /* Color of the active indicator */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #2575fc; /* Color of the inactive indicators */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Make controls smaller */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+/* About Section */
+.about-section {
+    background-color: #d32f2f; /* Red background */
+    color: #fff; /* White text for contrast */
+}
+
+.about-section img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    border: 3px solid black; /* Black border around the image */
+}
+
+.about-section h2 {
+    color: #fff; /* White color for the heading */
+}
+
+/* Our Team Section */
+.our-team .card {
+    background-color: #333; /* Dark background for cards */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.our-team .card:hover {
+    transform: translateY(-5px);
+}
+
+.our-team .card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.our-team .card-title {
+    color: #d32f2f; /* Red color for team member names */
+}
+
+.our-team .card-text {
+    color: #fff; /* White text for job titles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-image: url('comic2.jpg'); /* Path to your JPG background */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px; /* Increased padding for better spacing */
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Evenly space out sections */
+  align-items: flex-start; /* Align items at the start of the flex container */
+  flex-wrap: wrap;
+  max-width: 1200px; /* Increased for larger screens */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer-logo {
+  width: 200px; /* Larger logo for prominence */
+  height: auto;
+  margin-bottom: 20px; /* Space below logo */
+}
+
+.footer-section {
+  flex: 1; /* Allow sections to grow and shrink */
+  margin: 0 15px; /* Space between sections */
+  min-width: 150px; /* Ensure content visibility on small screens */
+}
+
+.footer-section h3 {
+  font-weight: bold;
+  font-size: 1.2em; /* Slightly larger for better readability */
+  margin-bottom: 15px; /* Space below heading */
+  color: #d32f2f; /* Red color for headings in footer */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0; /* Space between list items */
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.footer-section ul li a:hover {
+  color: #d32f2f; /* Red on hover for contrast */
+  text-decoration: none; /* Remove underline, use color change instead */
+}
+
+.footer-section p {
+  color: white;
+  margin: 10px 0; /* Space around paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 15px 0; /* Space above and below each section on mobile */
+  }
+}
+
